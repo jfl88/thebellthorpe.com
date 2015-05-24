@@ -1,0 +1,42 @@
+body {
+
+}
+
+.footer {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  border-top: 1px solid #eee;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  padding-bottom: 0px;
+}
+
+.navbar-brand {
+  height: 0px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .jumbotron,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+  }
+  .navbar-nav>li {
+    display: table-cell;
+    float: none;
+    text-align: center;
+    padding-right: 20px;
+  }  
+}
