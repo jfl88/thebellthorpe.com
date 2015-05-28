@@ -1,0 +1,22 @@
+{
+  "name": "thebellthorpe.com",
+  "version": "0.0.1",
+  "description": "The Bellthorpe Website",
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfl88/thebellthorpe.com.git"
+  },
+  "author": "Jason Lyons",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jfl88/thebellthorpe.com/issues"
+  },
+  "homepage": "https://github.com/jfl88/thebellthorpe.com#readme",
+  "dependencies": {
+    "express": "3.0.0alpha4",
+    "jade": "*",
+    "stylus": "*",
+    "nib": "*"
+  }
+}
