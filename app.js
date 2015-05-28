@@ -2,8 +2,7 @@
  * Module dependencies
  */
 
-var express = require('express'),
-	nib = require('nib')
+var express = require('express')
 
 var app = express()
 
@@ -16,6 +15,12 @@ app.use(express.static(__dirname + '/public'))
 app.get('/', function (req, res) {
 	res.render('index',
 		{ title : 'Home'}
+	)
+})
+
+app.get('/beer', function (req, res) {
+	res.render('beer',
+		{ title : 'Beer'}
 	)
 })
 
