@@ -34,13 +34,17 @@ html(lang='en')
             li
               a(href='#about') About
             li
-              a(href='http://apt5.thebellthorpe.com/movies') Movies
-            li
-              a(href='http://apt5.thebellthorpe.com/tv') TV             
-            li
-              a(href='http://apt5.thebellthorpe.com/transmission') Transmission
-            li
-              a(href='/beer') Beer             
+              a(href='/beer') Beer
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Members
+                span.caret
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='http://apt5.thebellthorpe.com/movies') Movies
+                li
+                  a(href='http://apt5.thebellthorpe.com/tv') TV
+                li
+                  a(href='https://apt5.thebellthorpe.com/transmission') Transmission
             li
               a(href='#contact') Contact
         // /.nav-collapse

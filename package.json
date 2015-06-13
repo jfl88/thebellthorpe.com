@@ -15,8 +15,6 @@
   "homepage": "https://github.com/jfl88/thebellthorpe.com#readme",
   "dependencies": {
     "express": "3.0.0alpha4",
-    "jade": "*",
-    "stylus": "*",
-    "nib": "*"
+    "jade": "*"
   }
 }
