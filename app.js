@@ -9,7 +9,7 @@ var app = express()
 if (cluster.isMaster) {
 	var cpuCount = require('os').cpus().length;
 
-	for (var i = 0; i < cpuCount; i++) {
+	for (var i = 0; i < cpuCount - 1; i++) {
 		cluster.fork();
 	}
 }
