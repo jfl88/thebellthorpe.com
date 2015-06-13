@@ -13,13 +13,15 @@ html(lang='en')
     link(href='css/bootstrap.min.css', rel='stylesheet')
     // Custom styles for this template
     link(href='css/main.css', rel='stylesheet')
+    // Font Awesome!
+    link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', rel='stylesheet')
     // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
     //if lt IE 9
       script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
       script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
   body
     // Fixed navbar
-    nav.navbar.navbar-default.navbar-fixed-top
+    nav.navbar.navbar-default
       .container
         .navbar-header
           button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
@@ -34,6 +36,8 @@ html(lang='en')
             li
               a(href='#about') About
             li
+              a(href='/pong') Ping Pong
+            li
               a(href='/beer') Beer
             li.dropdown
               a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Members
@@ -45,13 +49,16 @@ html(lang='en')
                   a(href='http://apt5.thebellthorpe.com/tv') TV
                 li
                   a(href='https://apt5.thebellthorpe.com/transmission') Transmission
+                li
+                  a(href='https://apt5.thebellthorpe.com/addpong') Add Pong Score
             li
               a(href='#contact') Contact
         // /.nav-collapse
     .container
       block content
-      footer.footer
-        p &copy; thebellthorpe.com 2015
+      .container
+        .footer
+          p &copy; thebellthorpe.com 2015
     // /container
     // Placed at the end of the document so the pages load faster
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')

@@ -32,5 +32,11 @@ else {
 		)
 	})
 
+	app.get('/pong', function (req, res) {
+		res.render('pong',
+			{ title : 'Ping Pong'}
+		)
+	})
+
 	app.listen(3000)
 }

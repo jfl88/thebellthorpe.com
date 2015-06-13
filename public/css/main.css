@@ -9,14 +9,24 @@ body {
   border-top: 1px solid #eee;
 }
 
+.huge {
+    font-size: 40px;
+}
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
+  padding-top: 0px;
   padding-bottom: 0px;
 }
 
 .navbar-brand {
   height: 0px;
+}
+
+.navbar-default {
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Responsive: Portrait tablets and up */
