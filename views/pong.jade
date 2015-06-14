@@ -2,24 +2,47 @@ extend layout
 block content
   .container(role="main")
     .page-header
-      h2 Ping Pong League
+      h2 The Bellthorpe League
     .row
-      h3.sub-header Player Stats
-      .table-responsive
-        table.table.table-striped
-          thead
-            tr
-              th Rank
-              th Name
-              th Wins
-              th Losses
-              th Draws
-              th Played
-          tbody
-            tr
-              td 1
-              td Jason Lyons
-              td 2
-              td 4
-              td 1
-              td 7
+      .col-md-6
+        .panel.panel-default
+          .panel-heading Player Stats
+          .panel-body
+            .table-responsive
+              table.table.table-striped
+                thead
+                  tr
+                    th Rank
+                    th Name
+                    th Wins
+                    th Losses
+                    th Draws
+                    th Played
+                tbody
+                  tr
+                    td 1
+                    td Jason
+                    td 2
+                    td 4
+                    td 1
+                    td 7
+      .col-md-6
+        .panel.panel-default
+          .panel-heading Last 10 Singles Matches
+          .panel-body
+            .table-responsive
+              table.table.table-striped
+                thead
+                  tr
+                    th Player 1
+                    th Score
+                    th Player 2
+                    th Score
+                    th Winner
+                tbody
+                  tr
+                    td Jason
+                    td 11
+                    td Monso
+                    td 8
+                    td Jason
