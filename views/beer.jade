@@ -1,0 +1,46 @@
+extend layout
+block content
+  .container(role="main")
+    .page-header
+      h2 Keg Monitor
+    .row
+      .col-md-4.col-sm-12
+        .panel.panel-default.clearfix
+          .panel-body
+            .row
+              .col-md-5.col-sm-6.col-xs-7
+                img.img-responsive(src='img/bb.png', alt='Brews Brothers Logo')
+              .col-md-7.col-sm-6.text-right
+                .beer-brand Brews Brothers
+                .beer-type Ruby Red Ale
+          .panel-footer.text-right On Tap
+      .col-md-4.col-sm-6.col-xs-12
+        .panel.panel-default
+          .panel-body
+            .row
+              .col-md-3.col-sm-2.col-xs-1
+                .huge
+                  i.fa.fa-fire
+              .col-md-9.col-sm-10.text-right
+                .huge #.##&deg;C
+          .panel-footer.text-right Current Temperature
+      .col-md-4.col-sm-6.col-xs-12
+        .panel.panel-default
+          .panel-body
+            .row
+              .col-md-3.col-sm-2.col-xs-1
+                .huge
+                  i.fa.fa-beer
+              .col-md-9.col-sm-10.text-right
+                .huge #.##L
+          .panel-footer.text-right Beer Remaining
+    .row
+      .col-md-12
+        .panel.panel-default
+          .panel-heading 
+            i.fa.fa-area-chart
+            |  Historical Temperature
+          .panel-body
+            a(href='https://plot.ly/~butters1/221/', target='_blank', style='display: block; text-align: center;')
+              | <img src="https://plot.ly/~butters1/221.png" alt="streaming temp sensor data" style="max-width: 100%; max-height: 100%;"  onerror="this.onerror=null;this.src='https://plot.ly/404.png';" />
+            script(data-plotly='butters1:221', src='https://plot.ly/embed.js', async)

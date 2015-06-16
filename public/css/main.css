@@ -9,14 +9,32 @@ body {
   border-top: 1px solid #eee;
 }
 
+.huge {
+  font-size: 40px;
+}
+
+.beer-brand {
+  font-size: 25px;
+}
+
+.beer-type {
+  font-size: 15px;
+}
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
+  padding-top: 0px;
   padding-bottom: 0px;
 }
 
 .navbar-brand {
   height: 0px;
+}
+
+.navbar-default {
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Responsive: Portrait tablets and up */
