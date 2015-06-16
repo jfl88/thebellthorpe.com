@@ -10,7 +10,15 @@ body {
 }
 
 .huge {
-    font-size: 40px;
+  font-size: 40px;
+}
+
+.beer-brand {
+  font-size: 25px;
+}
+
+.beer-type {
+  font-size: 15px;
 }
 
 .jumbotron {
